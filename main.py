@@ -19,7 +19,8 @@ def index():
     title = request.form.get('title')
     query = title
     results = geocoder.geocode(query)
-    return str(results[0]['geometry']['lat'])
+    geo = f.Map(location=[0, 0])
+    return geo._repr_html_()
   return render_template('index.html')
 
 
