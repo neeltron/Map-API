@@ -5,6 +5,10 @@
     </title>
   </head>
   <body>
-    Hey there, feel free to use this starter kit for your Flask Project!
+    <h1>Geolocation Stats</h1>
+    <form method = "post" action = "{{ url_for("index")}}">
+      <input type = "text" name = "title" placeholder = "City"></input>
+      <button>Submit</button>
+    </form>
   </body>
 </html>
